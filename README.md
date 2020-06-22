@@ -36,20 +36,19 @@ git clone リポジトリURL
 
 - 作成したRailsアプリのディレクトリに`cd`コマンドで移動
 
-- gem をアプリ内にインストールする設定を行った上で `bundle install`を実行
+- gem をアプリ内にインストールする設定を行った上で `bundle install` を実行
 
 ```bash
-bundle config set path "vendor/bundle" --local
+bundle config set path vendor/bundle --local
 bundle install
 ```
 
-- `package.json` にリスト化されている全ての依存関係を `node_modules` 内にインストール
+- 次のコマンドで `package.json` にリスト化されている全ての依存関係を `node_modules` 内にインストール
   - `Rails 6` のアプリをクローンした場合は必須です
 
 ```
 yarn install --check-files
 ```
-
 
 - データベースを作成
 
@@ -71,10 +70,11 @@ git checkout -b feature/crud-for-tasks
 なお，クローンをした時点で `.git` ディレクトリが作成され，`origin` が設定されております。次のコマンドは***不要***です。
 
 ```bash
-# 次は実行しないこと
+# 次は実行不要
 git init
 git remote add origin リポジトリURL
 ```
+
 ## 2. 実装
 
 - テキスト教材「resources を使ったCRUD処理の実装」を参考に，担当箇所の CRUD 処理を全て実装して下さい。
