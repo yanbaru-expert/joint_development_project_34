@@ -1,0 +1,7 @@
+<h1>ユーザー 編集</h1>
+<%= form_with model: @user, local: true do |f| %>
+  <p>お名前:<%= f.text_field :name %></p>
+  <p>年齢:<%= f.text_field :age %></p>
+  <%= f.submit "送信" %>
+<% end %>
+<%= link_to "一覧画面へ", users_path %>
