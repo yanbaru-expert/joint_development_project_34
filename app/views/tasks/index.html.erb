@@ -1,7 +1,7 @@
 <%= link_to "投稿画面へ", new_task_path %>
 <% @tasks.each do |task| %>
   <p>
-    <!-- 以下の2行のコードを追加 -->
     <%= task.title %>
+    <%= link_to "詳細", task_path(task.id) %>
   </p>
 <% end %>
