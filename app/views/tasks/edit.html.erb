@@ -1,7 +1,8 @@
-<p>新規登録</p>
+<p>更新</p>
 <%= form_with model: @task, local: true do |f| %>
-  <p>タイトル<%= f.text_field :title %></p>
-  <p>内容<%= f.text_field :content %></p>
+  <p>タイトル：<%= f.text_field :title %></p>
+  <p>内容：<%= f.text_field :content %></p>
   <%= f.submit "送信" %>
+
 <% end %>
 <%= link_to "一覧画面へ", tasks_path %>
