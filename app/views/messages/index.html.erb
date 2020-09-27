@@ -3,8 +3,8 @@
 <% @messages.each do |message| %>
   <p>
     <%= message.title %>
-    <%= link_to "詳細", messages_path(message.id)%>
+    <%= link_to "詳細", message_path(message.id)%>
     <%= link_to "編集", edit_message_path(message.id)%>
-    <%= link_to "削除", messages_path(message.id), method: :delete, data:{confirm: "削除しますか"}%>
+    <%= link_to "削除", message_path(message.id), method: :delete, data:{confirm: "削除しますか"}%>
   </p>
 <% end %>
