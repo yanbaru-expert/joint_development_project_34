@@ -4,5 +4,6 @@
     <%= task.title %>
     <%= link_to "詳細", task_path(task) %>
     <%= link_to "編集", edit_task_path(task) %>
+    <%= link_to "削除", task_path(task), method: :delete, data: {confirm: "削除しますか？"} %>
   </p>
 <% end %>
